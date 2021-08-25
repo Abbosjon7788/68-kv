@@ -63,10 +63,10 @@ const AddMembers = (props) => {
 
                </div>
                <div className="md:mt-12 mt-6 md:w-10/12 w-full mx-auto">
-                    <div className="flex flex-wrap justify-center sm-400:-mr-4 -mr-8">
+                    <div className="flex flex-wrap justify-center -mr-4">
                          {
                               data.map((member, index) => (
-                                   <div key={index} className="w-32 relative sm-400:mr-4 mr-8 mt-4 bg-gray-800 hover:bg-gray-900 font-poppins tracking-tight capitalize rounded-md shadow-lg">
+                                   <div key={index} className="w-32 relative mr-4 mt-4 bg-gray-800 hover:bg-gray-900 font-poppins tracking-tight capitalize rounded-md shadow-lg">
                                         <h1 onClick={() => editMember(index)} className="text-center text-white w-full px-4 py-2">{member}</h1>
                                         <span onClick={() => deleteMember(index)} className="absolute cursor-pointer shadow-2xl border shadow-inner text-gray-800 hover:text-red-800 bg-white rounded-full -right-2 -top-2 flex items-center justify-center h-6 w-6 font-semibold text-2xl">&times;</span>
                                    </div>
