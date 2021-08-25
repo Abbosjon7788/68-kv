@@ -4,12 +4,15 @@ import { api } from "../apiCall/actions";
 export const root = createSlice({
      name: 'calculation',
      initialState: {
-          members: [],
+          members: null,
      },
      reducers: {
+          setMembers: (state, action) => {
+               state.members = action.payload;
+          }
 
      }
 });
 
-export const { } = root.actions;
+export const { setMembers } = root.actions;
 export default root.reducer;
